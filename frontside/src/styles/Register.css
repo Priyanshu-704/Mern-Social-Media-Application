@@ -1,0 +1,107 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin:20vh auto;
+    height:60vh;
+    width:60vw;
+    max-width:100%; */
+}
+.register-small {
+  padding: 0.5rem;
+}
+.register-container {
+  margin-top: 3rem;
+  background: #615dfa;
+  padding: 0.1rem 3rem;
+  border-radius: 10px;
+}
+.register-header {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+.register-subheader {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.register-dataform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register-dataformemail {
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  outline: none;
+  height: 1.5rem;
+  width: 100%;
+  border: 2px solid var(--border-color);
+  color: white;
+  background-color: #4e4ac8;
+}
+
+.register-dataformpass {
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  height: 1.5rem;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  color: white;
+  background-color: #4e4ac8;
+}
+
+.register-dataformbtn {
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  background-color: #4e4ac8;
+  margin: 0.5rem auto;
+  width: 50%;
+  height: 2.5rem;
+  outline: none;
+  border-radius: 15px;
+}
+.register-dataformselect {
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  width: 105%;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid var(--border-color);
+  color: white;
+  height: 2rem;
+  background-color: #4e4ac8;
+}
+.register-showpass {
+  position: absolute;
+  top: 47%;
+  left: 58.5%;
+  background-color: var(--bg-color);
+  padding: 2px;
+  border-radius: 2px;
+  color: white;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.register-showcfpass {
+  position: absolute;
+  top: 55%;
+  left: 58.5%;
+  background-color: var(--bg-color);
+  padding: 2px;
+  border-radius: 2px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: white;
+}
