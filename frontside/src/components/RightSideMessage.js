@@ -85,7 +85,7 @@ const refDisplay = useRef();
 useEffect(()=>{
     if(id){
         const getMessagesData = async () =>{
-            await dispatch(getMessages({auth,id}))
+            dispatch(getMessages({ auth, id }))
             if(refDisplay.current){
                 refDisplay.current.scrollIntoView({behavior:'smooth', block:'end'})
             }
@@ -114,7 +114,7 @@ const handleSubmit = async (e)=> {
         createdAt: new Date().toISOString()
     }
 setLoadMedia(false)
-await dispatch(addMessage({auth, msg, socket}))
+    dispatch(addMessage({ auth, msg, socket }))
 if(refDisplay.current){
     refDisplay.current.scrollIntoView({behavior:'smooth', block:'end'})
 }

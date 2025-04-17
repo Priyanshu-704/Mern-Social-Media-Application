@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ProfileImg from "../images/profile.jpg";
 const imageshow = (src) => {
     return(
         <>
@@ -23,8 +23,8 @@ const MsgDisplay =({user,msg}) => {
     return (
         <div className="msgdisplay">
             <div className="msgdisplayinfouser">
-                <img className="msgdisplayinfouseravatar" src={user?.avatar} alt={user?.fullname}/>
-                <img className="msgdisplayinfouseravatartwo" src={user?.avatar} alt={user?.fullname}/>
+                <img className="msgdisplayinfouseravatar" src={user?.avatar || ProfileImg} alt={user?.fullname}/>
+                <img className="msgdisplayinfouseravatartwo" src={user?.avatar|| ProfileImg} alt={user?.fullname}/>
                 <span className="msgdisplayinfouserusername"> {user?.username}</span>
             </div>
             <div className="msgdisplaytext">
