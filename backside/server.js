@@ -10,6 +10,7 @@ const commentRouter = require('./routers/commentRouter');
 const notifyRouter = require('./routers/notifyRouter');
 const messageRouter = require('./routers/messageRouter');
 const socketServer = require("./socketServer");
+const exploreRouter = require('./routers/exploreRouter');
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use('/api',postRouter)
 app.use('/api',commentRouter)
 app.use('/api',notifyRouter)
 app.use('/api',messageRouter)
+app.use('/api',exploreRouter)
 
 
 const port =  5000;
