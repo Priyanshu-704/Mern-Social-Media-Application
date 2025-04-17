@@ -24,9 +24,9 @@
    
 
 }
-.active{
-    color:'white';
-}
+.active-class {
+    color: white;
+ }
 .header-center input{
     background: transparent;
     outline:none;

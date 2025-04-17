@@ -50,8 +50,7 @@ export const Header = () =>{
 
 
    const isActive = (pn) => {
-      console.log(pn)
-       if(pn === pathname) return true;
+      return pn === pathname;
    }  
 
    const handleClose = () => {
@@ -109,24 +108,24 @@ export const Header = () =>{
              <Link to="/"  >
                 
              <IconButton >
-                <HomeIcon className={`${isActive("/")}`}/>
+             <HomeIcon className={isActive("/") ? "active-class" : ""}/>
              </IconButton>
              </Link>
           
              <Link to="/message">
              <IconButton  >
-             <MessageIcon className={`${isActive("/")}`}/>
+             <MessageIcon className={isActive("/message") ? "active-class" : ""}/>
             </IconButton>
              </Link>
              <Link to="/notification">
              <IconButton>
-                <NotificationsIcon className={`${isActive("/")}`}/>
+                <NotificationsIcon className={isActive("/notification") ? "active-class" : ""}/>
              </IconButton>
              <span style={{position:'absolute', transform:'translate(-26px,16px)',color:'white', fontSize:'10px'}}>{notify && notify.data.length}</span>
              </Link>
              <Link to="/explore">
              <IconButton>
-                <ExploreIcon className={`${isActive("/")}`}/>
+                <ExploreIcon className={isActive("/explore") ? "active-class" : ""}/>
              </IconButton>
              </Link>
              <IconButton onClick={()=>dispatch(logout())}>
