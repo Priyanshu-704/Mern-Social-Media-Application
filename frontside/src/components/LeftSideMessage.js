@@ -17,7 +17,7 @@ const LeftSideMessage = () => {
 
     useEffect(() => {
         if (!message.firstLoad) {
-            dispatch(getConversations({auth}));
+            dispatch(getConversations(auth));
         }
     }, [dispatch, auth, message.firstLoad]);
 
